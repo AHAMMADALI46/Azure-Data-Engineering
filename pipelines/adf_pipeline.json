@@ -1,0 +1,20 @@
+{
+  "name": "HealthcareIngestTransform",
+  "properties": {
+    "activities": [
+      {
+        "name": "Ingest_Raw_Data",
+        "type": "Copy",
+        "inputs": [ ... ],
+        "outputs": [ ... ]
+      },
+      {
+        "name": "Databricks_Transform",
+        "type": "DatabricksNotebook",
+        "dependsOn": [ { "activity": "Ingest_Raw_Data" } ],
+        "inputs": [ ... ],
+        "outputs": [ ... ]
+      }
+    ]
+  }
+}
