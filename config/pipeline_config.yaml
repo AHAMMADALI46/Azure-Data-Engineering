@@ -1,0 +1,10 @@
+extract:
+  source: "data/raw/healthcare_raw.csv"
+  type: "csv"
+
+transform:
+  drop_nulls: ["PatientID"]
+
+load:
+  destination: "data/processed/final_output.csv"
+  type: "csv"
